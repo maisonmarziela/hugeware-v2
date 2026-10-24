@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="description" content="Hugeware — security for everyone. Check your passphrase strength locally, in your browser.">
+  <meta name="referrer" content="no-referrer">
+  <title>Hugeware — security for everyone.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="/" aria-label="Hugeware home">
+      <span class="ascii-mark" aria-hidden="true">██  ██<br>██████<br>██  ██</span>
+      <span>hugeware<span class="registered">®</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#check">Passphrase check</a>
+      <a href="#services">How we help</a>
+      <a href="#notes">Field notes</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow">CYBERSECURITY. FOR EVERYONE.</p>
+      <h1>for consumers.<br>by consumers<span class="red">.</span></h1>
+      <p class="hero-description">Clear advice, practical protection, and tools that respect you.
+        Start with a free check that runs entirely in your browser.</p>
+      <a class="button button-light" href="#check">Check your passphrase <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section id="check" class="section-pad" aria-labelledby="check-title">
+      <p class="eyebrow">FREE · INSTANT · LOCAL ONLY</p>
+      <h2 id="check-title">How strong is your passphrase?</h2>
+      <p class="section-intro">Type or paste a passphrase. Nothing leaves your browser — this page
+        makes no network requests while you type. Pick a topic to preselect advice:</p>
+
+      <div class="topic-tabs" role="group" aria-label="Advice topic">
+        <button type="button" data-topic="personal" aria-pressed="true">Personal</button>
+        <button type="button" data-topic="business" aria-pressed="false">Business</button>
+        <button type="button" data-topic="response" aria-pressed="false">Incident</button>
+      </div>
+
+      <form id="check-form" autocomplete="off">
+        <label class="mono" for="pass-input">PASSPHRASE</label>
+        <input id="pass-input" name="passphrase" type="text" placeholder="e.g. correct horse battery staple"
+           minlength="1" maxlength="200" required>
+        <button class="button button-dark" type="submit">Estimate strength <span aria-hidden="true">↗</span></button>
+      </form>
+
+      <div id="check-result" class="check-result mono" role="status" aria-live="polite" hidden>
+        <p><span id="result-label"></span></p>
+        <p id="result-detail"></p>
+        <p class="small-note" id="result-note"></p>
+      </div>
+
+      <p class="small-note">We never store, log, or transmit what you type here. Reload the page and it is gone.</p>
+    </section>
+
+    <section id="services" class="section-pad" aria-labelledby="services-title">
+      <p class="eyebrow">HOW WE HELP</p>
+      <h2 id="services-title">Different worlds. One less worry.</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Personal protection</h3>
+          <p>Accounts, devices, and recovery planning for you and your family.</p>
+        </article>
+        <article class="service-card">
+          <h3>Business security</h3>
+          <p>Assessments, access reviews, and practical prioritization for teams.</p>
+        </article>
+        <article class="service-card">
+          <h3>Incident readiness</h3>
+          <p>Playbooks and practice, so the first hard day is not the first rehearsal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="notes" class="section-pad" aria-labelledby="notes-title">
+      <p class="eyebrow">FIELD NOTES</p>
+      <h2 id="notes-title">A little knowledge. A stronger position.</h2>
+      <ul class="notes-list" id="notes-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer section-pad">
+    <div class="footer-top">
+      <span class="brand"><span class="ascii-mark" aria-hidden="true">██  ██<br>██████<br>██  ██</span><span>hugeware<span class="registered">®</span></span></span>
+      <p>for consumers. by consumers.</p>
+    </div>
+    <div class="footer-bottom mono">
+      <span>© <span id="year">2026</span> HUGEWARE.</span>
+      <span id="ref-badge" hidden>Referral: <span id="ref-value"></span></span>
+      <span>SECURITY FOR EVERYONE.</span>
+    </div>
+  </footer>
+</body>
+</html>

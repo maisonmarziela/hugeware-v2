@@ -1,0 +1,6 @@
+Contact: mailto:security@hugeware.example
+Expires: 2027-12-31
+Preferred-Languages: en
+Canonical: /.well-known/security.txt
+Policy: /SECURITY.md
+Remarks: This site is fully static. Reports about the hosting platform belong to GitHub Pages.

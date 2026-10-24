@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#111210"/>
+  <text x="16" y="12" font-family="monospace" font-size="9" fill="#7ab0ff" text-anchor="middle">██</text>
+  <text x="16" y="21" font-family="monospace" font-size="9" fill="#7ab0ff" text-anchor="middle">▓▓</text>
+  <text x="16" y="30" font-family="monospace" font-size="9" fill="#7ab0ff" text-anchor="middle">██</text>
+</svg>
